@@ -43,11 +43,15 @@
         var text1 = prompt("Escribe una frase");
             var nText = text1.length;
             console.log(nText);
+            count =0
             var i;
             for (i = 0; i < nText; i++) {
-                if (text1.substring(i, 1) === "a" || text1.substring(i, 1) === "e" || text1.substring(i, 1) === "i" || text1.substring(i, 1) === "o" || text1.substring(i, 1) === "u") {
-                    document.write(text1.substring(i));
+                if (text1.charAt(i) === "a" || text1.charAt(i) === "e" || text1.charAt(i) === "i" || text1.charAt(i) === "o" || text1.charAt(i) === "u") {
+                    document.write(text1.charAt(i));
+                    count++;    
+                    
                 console.log(i)}}
+                document.write(count);
         </script>
 </body>
 </html>
