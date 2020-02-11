@@ -44,14 +44,17 @@
             var nText = text1.length;
             console.log(nText);
             count =0
+            var arreglo =[]
             var i;
             for (i = 0; i < nText; i++) {
                 if (text1.charAt(i) === "a" || text1.charAt(i) === "e" || text1.charAt(i) === "i" || text1.charAt(i) === "o" || text1.charAt(i) === "u") {
-                    document.write(text1.charAt(i));
+                    // document.write(text1.charAt(i));
+                    arreglo.push(text1.charAt(i));
                     count++;    
                     
                 console.log(i)}}
-                document.write(count);
+                document.write("El numero de vocales es " + count + " y son las vocales "+ "("+arreglo.toString()+")");
+                // document.write(arreglo.toString()); 
         </script>
 </body>
 </html>
